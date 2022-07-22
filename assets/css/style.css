@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* 
+Regular = 400
+Medium = 500
+SemiBold = 600
+Bold = 700
+ExtraBold = 800
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Font-Size */
+
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px
+}
+.fs20{
+    font-size: 20px;
+}
+.fs25{
+    font-size: 25px;
+}
+.fs35{
+    font-size: 35px
+}
+.fs40{
+    font-size: 40px;
+}
+
+/* Font-Weight */
+
+.fwextrabold{
+    font-weight: 800;
+}
+
+/* Class pour les couleur */
+
+.bgbleuclair{
+    background-color: #00A0C1;
+}
+.bgbleu{
+    background-color: #16697A;
+}
+.bgbleufonceclair{
+    background-color: #16697A;
+}
+.bgbleufonce{
+    background-color: #252B42;
+}
+.bgblancf6 {
+    background-color: #f6f6f6;
+}
+.bgblancf3{
+    background-color: #F3F3F3;
+}
+.bgblancfa{
+    background-color: #FAFAFA;
+}
+.bggray{
+    background-color: #737373;
+}
+.bgorange{
+    background-color: #FFA62B;
+}
+.colorgray{
+    color: #737373;
+}
+.colororange{
+    color: #FFA62B;
+}
+/* Header */
+header {
+    background: linear-gradient(107.2deg, #FBE38F 1.65%, #F1D256 100.77%);
+}
+#containernav a img{
+    width: 20px;
+    height: 20px;
+}
+/* image header */
+#sectionheader img {
+    bottom: 0;
+    right: 55px;
+}
+/* Section Business */
+#imagebureau div img:nth-child(1){
+    display: none;
+}
+#imagebureau::after{
+    content: '';
+    width: 333px;
+    height: 442px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+}
+#cercle{
+    width: 100px;
+    height: 100px;
+    background-color: #00A0C1;
+    z-index: 1000;
+}
+#cercle:hover{
+    background-color: #16697A;
+}
+#cercle:after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+/* Section Logo */
+#Nlogo{
+    background-color: #FAFAFA;
+}
+#Nmail{
+    height: 25vh !important;
+}
+#Nmail div input{
+    height: 58px !important;
+    background-color: #fff;
+    border: none;
+}
+#Nmail div button{
+    height: 58px !important;
+    background-color: #FFA62B;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px 5px 5px 0px;
+}
+/* Section contact */
+#Ncardcontact div button{
+    border: 1px solid #FFA62B;
+}
+#Ncardcontact div:nth-child(2) button{
+    border: 1px solid #fff;
+}
+#Ncardcontact div{
+    height: 333px !important;
+}
+#Ncardcontact div:nth-child(2){
+    height: 393px !important;
+}
+/* Footer */
+#NFtitle button{
+    border: 2px solid #ffa72ba4;
+    border-radius: 10px;
+}
+#NFtitle button:hover{
+    background-color: #ffa72b60;
+}
+@media screen and (min-width: 700px) {
+
+    #sectionheader img {
+        width: 90% !important;
+    }
+     /* Section Business */
+    #imagebureau div img:nth-child(1){
+        display: block;
+    }
+    #imagebureau div img:nth-child(2){
+        display: none;
+    }
+    #imagebureau::after{
+        width: 598px;
+        height: 442px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    /* Navbar avec les boutons */
+    #navbar {
+        background: none;
+    }
+    /* Section header */
+   
+    #sectionheader img {
+        width: 50% !important;
+    }
+
+    #sectionheader {
+        justify-content: start !important;
+    }
+
+    #sectionheader h1 {
+        font-size: 70px;
+        text-align: start !important;
+    }
+
+    #sectionheader p {
+        font-size: 25px;
+        text-align: start !important;
+    }
+
+    #sectionheader button {
+        padding: 10px 30px 10px 30px !important;
+    }
+
+    #buttonblue {
+        justify-content: start !important;
+    }
+    /* Section product */
+    #titlepara{
+        padding-top: 0 !important;
+    }
+    /* Section Business */
+    #divmoststart{
+        width: 30% !important;
+    }
+    #imagebureau{
+        width: 50% !important;
+    }
+    #imagebureau::after{
+        width: 598px;
+        height: 442px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+    }
+    /* Section Logo */
+    #Nlogo span{
+        width: 100%;
+        height: 10vh;
+    }
+    #Nmail{
+        width: 70% !important;
+        height: 15vh !important;
+        position: absolute !important;
+        bottom: 25px;
+    }
+    #Nmail div button{
+        right: 100px;
+    }
+}
